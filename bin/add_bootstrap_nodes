@@ -1,0 +1,4 @@
+#!/bin/bash
+
+BOOTSTRAP_NODES_PATH="$( cd "$(dirname "$0")" ; pwd -P )/../bootstrap_nodes"
+cat $BOOTSTRAP_NODES_PATH | xargs ipfs bootstrap add
