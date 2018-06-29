@@ -1,0 +1,4 @@
+#!/bin/bash
+
+KNOWN_WORKERS_PATH="$( cd "$(dirname "$0")" ; pwd -P )/../known_workers"
+cat $KNOWN_WORKERS_PATH | xargs ipfs swarm connect
